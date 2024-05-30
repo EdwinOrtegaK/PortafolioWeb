@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  color: #6B7280;
+}
+
+.border-container {
+  border: 4px solid white;
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 1200px;
+  height: 100%;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+p {
+  font-size: 0.9rem;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.4;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content-scroll {
+  max-height: 20rem;
+  width: 20rem;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  text-align: right;
+}
+
+.content-scroll::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* Transition classes */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* Styles for proyects */
+.project_section {
+  padding: 1rem;
+  text-align: right;
+}
+
+.project_heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.project_item {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.project_item:hover {
+  color: #6B7280;
+}
+
+.project_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.project_info {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for info */
+.info_section {
+  padding: 1rem;
+  text-align: right;
+}
+
+.info_heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.info_item {
+  margin-bottom: 2rem;
+}
+
+.info_content {
+  text-align: right;
+}
+
+.info_content p,
+.info_content ul {
+  margin-bottom: 1rem;
+}
+
+.info_content li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.info_content a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info_content a:hover {
+  color: #6B7280;
+}
